@@ -4,6 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ayush Pal — Web Developer Portfolio</title>
+
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ayush Pal, a Full-Stack Web Developer specialized in building premium, responsive websites and interactive applications using React, JavaScript, and Firebase." />
+  <meta name="keywords" content="Ayush Pal, Web Developer, Full-Stack Developer, Frontend Developer, React Developer, Software Engineer, Portfolio, Hotel Vijay Grand Website, Firebase, JavaScript" />
+  <meta name="author" content="Ayush Pal" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/Royaldeadshot" />
+  <meta property="og:title" content="Ayush Pal — Web Developer Portfolio" />
+  <meta property="og:description" content="Explore the portfolio of Ayush Pal, featuring full-stack projects, responsive web design, and modern front-end craftsmanship." />
+  <meta property="og:image" content="https://cdn.hackclub.com/019e54be-d9ea-7acc-97a4-3f94b0b83697/screenshot.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://github.com/Royaldeadshot" />
+  <meta property="twitter:title" content="Ayush Pal — Web Developer Portfolio" />
+  <meta property="twitter:description" content="Explore the portfolio of Ayush Pal, featuring full-stack projects, responsive web design, and modern front-end craftsmanship." />
+  <meta property="twitter:image" content="https://cdn.hackclub.com/019e54be-d9ea-7acc-97a4-3f94b0b83697/screenshot.png" />
+
+  <!-- JSON-LD Structured Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayush Pal",
+    "jobTitle": "Full-Stack Web Developer",
+    "url": "https://github.com/Royaldeadshot",
+    "sameAs": [
+      "https://github.com/Royaldeadshot",
+      "https://linkedin.com/in/yourname"
+    ],
+    "knowsAbout": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Firebase",
+      "Responsive UI Design"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,6 +73,8 @@
       color: var(--text);
       font-family: var(--font-sans);
       min-height: 100vh;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
     /* NAV */
@@ -38,7 +85,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 52px;
+      height: 60px;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -47,7 +94,7 @@
     .nav-logo {
       font-family: var(--font-mono);
       color: var(--accent);
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 500;
       letter-spacing: 0.5px;
       text-decoration: none;
@@ -62,7 +109,7 @@
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
-      font-size: 13px;
+      font-size: 15px;
       transition: color 0.2s;
     }
 
@@ -89,7 +136,7 @@
 
     .terminal-tag {
       font-family: var(--font-mono);
-      font-size: 12px;
+      font-size: 13px;
       color: var(--accent);
       margin-bottom: 14px;
       display: flex;
@@ -108,7 +155,7 @@
     @keyframes blink { 50% { opacity: 0; } }
 
     .hero h1 {
-      font-size: clamp(28px, 5vw, 42px);
+      font-size: clamp(32px, 6vw, 48px);
       font-weight: 500;
       color: var(--text);
       line-height: 1.2;
@@ -121,7 +168,7 @@
     }
 
     .hero-subtitle {
-      font-size: 15px;
+      font-size: 17px;
       color: var(--muted);
       margin-bottom: 1.5rem;
       line-height: 1.7;
@@ -135,7 +182,7 @@
     }
 
     .badge {
-      font-size: 12px;
+      font-size: 13px;
       padding: 4px 12px;
       border-radius: 20px;
       border: 1px solid;
@@ -155,7 +202,7 @@
       border: none;
       padding: 10px 22px;
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
       cursor: pointer;
       display: flex; align-items: center; gap: 7px;
@@ -170,7 +217,7 @@
       border: 1px solid var(--border);
       padding: 10px 22px;
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 14px;
       cursor: pointer;
       display: flex; align-items: center; gap: 7px;
       text-decoration: none;
@@ -194,7 +241,7 @@
     }
 
     .section-header h2 {
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 500;
       color: var(--text);
       white-space: nowrap;
@@ -208,7 +255,7 @@
 
     .section-tag {
       font-family: var(--font-mono);
-      font-size: 11px;
+      font-size: 13px;
       color: var(--accent);
       background: #00e5ff0f;
       border: 1px solid #00e5ff33;
@@ -218,7 +265,7 @@
 
     /* ABOUT */
     .about-text {
-      font-size: 15px;
+      font-size: 17px;
       color: var(--muted);
       line-height: 1.85;
       max-width: 620px;
@@ -246,7 +293,7 @@
     .skill-card:hover { border-color: var(--accent); }
 
     .skill-icon { font-size: 20px; color: var(--accent); }
-    .skill-name { font-size: 13px; color: var(--text); font-weight: 500; }
+    .skill-name { font-size: 15px; color: var(--text); font-weight: 500; }
     .skill-bar-bg { height: 3px; background: var(--border); border-radius: 3px; }
     .skill-bar { height: 3px; border-radius: 3px; background: var(--accent); transition: width 1s ease; }
 
@@ -292,12 +339,12 @@
     .status-done { background: #4ade8011; color: #4ade80; border: 1px solid #4ade8033; }
     .status-wip  { background: #fbbf2411; color: #fbbf24; border: 1px solid #fbbf2433; }
 
-    .project-title { font-size: 14px; font-weight: 500; color: var(--text); }
-    .project-desc  { font-size: 12px; color: var(--muted); line-height: 1.65; flex: 1; }
+    .project-title { font-size: 16px; font-weight: 500; color: var(--text); }
+    .project-desc  { font-size: 14px; color: var(--muted); line-height: 1.65; flex: 1; }
 
     .project-tags { display: flex; gap: 6px; flex-wrap: wrap; }
     .project-tag {
-      font-size: 10px;
+      font-size: 11px;
       padding: 2px 8px;
       border-radius: 4px;
       background: var(--bg3);
@@ -310,7 +357,7 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 12px;
+      font-size: 14px;
       color: var(--accent);
       text-decoration: none;
       margin-top: auto;
@@ -333,7 +380,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 13px;
+      font-size: 15px;
       color: var(--muted);
       cursor: pointer;
       text-decoration: none;
@@ -345,7 +392,7 @@
     /* FOOTER */
     footer {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--muted);
       font-family: var(--font-mono);
       padding: 2rem;
@@ -471,11 +518,13 @@
 
       <div class="project-card">
         <div class="project-header">
-          <div class="project-icon"><i class="ti ti-hotel-star"></i></div>
+          <div class="project-icon" style="overflow: hidden; display: flex; align-items: center; justify-content: center;">
+            <img src="hotel_logo.png" alt="Hotel Vijay Grand Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;" />
+          </div>
           <span class="project-status status-done">done</span>
         </div>
         <div class="project-title">Hotel Vijay Grand Website & Staff Panel</div>
-        <div class="project-desc">A premium full-stack room booking & hotel management platform. Features a mobile-optimized guest portal with swipe-to-browse room carousels and a live staff dashboard synced in real-time with Firebase.</div>
+        <div class="project-desc">A complete digital management system for Hotel Vijay Grand. Built with a fluid, mobile-first guest booking portal featuring interactive room carousels, coupled with a real-time administrative staff dashboard powered by Firebase for instant operational synchronization and status updates.</div>
         <div class="project-tags">
           <span class="project-tag">React</span>
           <span class="project-tag">Firebase</span>
